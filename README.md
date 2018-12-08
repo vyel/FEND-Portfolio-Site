@@ -13,7 +13,7 @@ The scope of this project was to translate a given pdf mockup of a website from 
 1. Clone or download this repository
 2. Open index.html in a browser of your choice
 
-or check out the live version at https://vyel.github.io/FEND-Portfolio-Site
+or check out the live version at https://vyel.github.io/FEND-Portfolio-Site/
 
 ## Contributing
 
