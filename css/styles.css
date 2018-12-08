@@ -1,0 +1,234 @@
+/*****************************************
+	Global Styles
+*****************************************/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*****************************************
+	Header Styles
+*****************************************/
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	color: #000;
+	text-shadow: 2px 2px 20px #fff;
+	background-image: url('../img/floral-background.svg');
+	background-size: cover;
+	border-bottom: 7px double gray;
+	box-shadow: 3px 3px 20px -2px #000;
+}
+
+header img {
+	width: 120px;
+	height: 100%;
+	margin: 5px 10px 5px 30px;
+	padding: 10px;
+	background-color: white;
+	border: 2px solid gray;
+	border-radius: 50%;
+}
+
+.header-content .name {
+	font-family: 'Caveat', cursive;
+	font-size: 60px;
+	font-weight: 400;
+	padding: 5px 20px 0 10px;
+}
+
+.header-content .description {
+	text-align: right;
+	font-size: 24px;
+	font-weight: 700;
+	padding: 10px 20px 10px 10px;
+}
+
+
+/*******************************************
+	Main content: Inspirational Quote Styles
+*******************************************/
+
+.inspirational-quote {
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 15px;
+	font-family: 'Caveat', cursive;
+	background-color: #ffffff;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='50' height='25' viewBox='0 0 50 25'%3E%3Cdefs%3E%3Crect stroke='%23ffffff' stroke-width='0.1' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='2' height='2' patternUnits='userSpaceOnUse'%3E%3Cg stroke='%23ffffff' stroke-width='0.1'%3E%3Crect fill='%23fafafa' width='1' height='1'/%3E%3Crect fill='%23ffffff' width='1' height='1' x='1' y='1'/%3E%3Crect fill='%23f5f5f5' width='1' height='1' y='1'/%3E%3Crect fill='%23f0f0f0' width='1' height='1' x='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='b' width='5' height='11' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23ebebeb'%3E%3Cuse xlink:href='%23s' x='2' y='0'/%3E%3Cuse xlink:href='%23s' x='4' y='1'/%3E%3Cuse xlink:href='%23s' x='1' y='2'/%3E%3Cuse xlink:href='%23s' x='2' y='4'/%3E%3Cuse xlink:href='%23s' x='4' y='6'/%3E%3Cuse xlink:href='%23s' x='0' y='8'/%3E%3Cuse xlink:href='%23s' x='3' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='7' height='7' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23e5e5e5'%3E%3Cuse xlink:href='%23s' x='1' y='1'/%3E%3Cuse xlink:href='%23s' x='3' y='4'/%3E%3Cuse xlink:href='%23s' x='5' y='6'/%3E%3Cuse xlink:href='%23s' x='0' y='3'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='11' height='5' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23ffffff'%3E%3Cuse xlink:href='%23s' x='1' y='1'/%3E%3Cuse xlink:href='%23s' x='6' y='3'/%3E%3Cuse xlink:href='%23s' x='8' y='2'/%3E%3Cuse xlink:href='%23s' x='3' y='0'/%3E%3Cuse xlink:href='%23s' x='0' y='3'/%3E%3C/g%3E%3Cg fill='%23e0e0e0'%3E%3Cuse xlink:href='%23s' x='8' y='3'/%3E%3Cuse xlink:href='%23s' x='4' y='2'/%3E%3Cuse xlink:href='%23s' x='5' y='4'/%3E%3Cuse xlink:href='%23s' x='10' y='0'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='23' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23BA7'%3E%3Cuse xlink:href='%23s' x='2' y='5'/%3E%3Cuse xlink:href='%23s' x='23' y='13'/%3E%3Cuse xlink:href='%23s' x='4' y='18'/%3E%3Cuse xlink:href='%23s' x='35' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='61' height='31' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23BA7'%3E%3Cuse xlink:href='%23s' x='16' y='0'/%3E%3Cuse xlink:href='%23s' x='13' y='22'/%3E%3Cuse xlink:href='%23s' x='44' y='15'/%3E%3Cuse xlink:href='%23s' x='12' y='11'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='50' height='25'/%3E%3Crect fill='url(%23b)' width='50' height='25'/%3E%3Crect fill='url(%23c)' width='50' height='25'/%3E%3Crect fill='url(%23d)' width='50' height='25'/%3E%3Crect fill='url(%23e)' width='50' height='25'/%3E%3Crect fill='url(%23f)' width='50' height='25'/%3E%3C/svg%3E");
+}
+.quote-of-the-day {
+	font-family: 'Open Sans', sans-serif;
+	text-align: left;
+}
+.quote {
+	font-size: 35px;
+	font-weight: 700;
+	text-align: center;
+	padding: 20px;
+}
+
+.quote-author {
+	font-size: 25px;
+}
+
+/*****************************************
+	Main Content: Featured projects Styles
+*****************************************/
+
+.featured-projects {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.featured-projects .title {
+	width: 50%;
+	margin-top: 20px;
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	border-bottom: 5px double gray;
+}
+
+.projects-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 50px 0;
+}
+
+.project {
+	width: 270px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px;
+	padding: 20px;
+	border: 3px solid #808080;
+	border-radius: 15px;
+	box-shadow: 0px 10px 54px -19px rgba(0,0,0,0.75);
+}
+
+.project:hover {
+	box-shadow: 3px 3px 20px -2px #000;
+}
+
+.project img {
+	width: 250px;
+	margin: 6px 0 3px 0;
+}
+
+.project a {
+	width: 100%;
+	padding: 10px;
+	margin-top: 5px;
+	border-top: 2px solid gray;
+	text-align: center;
+}
+
+/*****************************************
+	Footer Styles
+*****************************************/
+footer {
+	height: 70px;
+	display: flex;
+	/*flex-direction: row;*/
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+	box-shadow: 3px 3px 20px -2px #000;
+	background-image: url('../img/floral-background.svg');
+	background-size: cover;
+	background-position: 0 270px;
+}
+
+.copyright {
+	padding: 7px;
+	margin: 5px;
+	background-color: #fff;
+	border-radius: 15px;
+}
+
+.contact-info {
+	width: 200px;
+	display: flex;
+	flex-direction: row;
+}
+
+.contact-info li a {
+	margin: 0 10px;
+}
+
+.contact-info li a img {
+	width: 30px;
+	height: 30px;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+/*****************************************
+	Media Queries
+*****************************************/
+@media screen and (max-width: 450px){
+	header {
+		text-shadow: 2px 2px 20px #fff;
+		/* Move the background-image to the left for better readability */
+		background-position: -90px 0;
+		background-size: auto;
+	}
+	.header-content .name {
+		font-size: 50px;
+	}
+	header img {
+		width: 80px;
+		margin: 23px 0 0 10px;
+	}
+	.featured-projects .title {
+		width: 90%;
+		font-size: 25px;
+	}
+}
+@media screen and (max-width: 385px) {
+	header {
+		text-shadow: 2px 2px 20px #fff;
+		/* Move the background-image to the left for better readability */
+		background-position: -90px 0;
+		background-size: auto;
+	}
+	.header-content .name {
+		font-size: 40px;
+	}
+	.header-content .description {
+		font-size: 20px;
+	}
+	header img {
+		width: 80px;
+		margin: 15px 0 0 10px;
+	}
+	.featured-projects .title {
+		width: 90%;
+		font-size: 20px;
+	}
+}
